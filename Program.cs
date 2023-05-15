@@ -27,7 +27,7 @@ namespace Generics_Problem
             Console.WriteLine();
         }*/
 
-        public static void Printmaxf(float[] arr2 )
+        /*public static void Printmaxf(float[] arr2 )
         {
             Console.WriteLine("Elements in array: ");
             for (int i = 0; i < arr2.Length; i++)
@@ -47,6 +47,26 @@ namespace Generics_Problem
             }
             Console.WriteLine(max);
             Console.WriteLine();    
+        }*/
+
+        public static void Printmaxs(string[] arr3)
+        {
+            Console.WriteLine("Elements in Array: ");
+            for (int i = 0; i < arr3.Length; i++)
+            {
+                Console.WriteLine(arr3[i]);
+            }
+            Console.WriteLine();
+            
+            string max = arr3[0];
+            for (int i = 1; i < arr3.Length; i++)
+            {
+                if (arr3[i].CompareTo(max) > 0)
+                {
+                    max = arr3[i];
+                }
+            }
+            Console.WriteLine("Maximum string in the given array are: "+max);
         }
 
         static void Main(string[] args)
@@ -57,8 +77,11 @@ namespace Generics_Problem
             /*int [] arr = { 5, 2, 9, 8, 3 };
             printmax(arr);*/
 
-            float[] arr2 = { 2.1F, 3.5F, 4.9F };
-            Printmaxf(arr2);
+            /*float[] arr2 = { 2.1F, 3.5F, 4.9F };
+            Printmaxf(arr2);*/
+
+            string[] arr3 = { "abcd", "xyz", "pqrstu" };
+            Printmaxs(arr3);
 
         }
 
